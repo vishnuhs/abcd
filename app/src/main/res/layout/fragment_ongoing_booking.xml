@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ongoing_booking">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="ONGOING BOOKING"
+        android:id="@+id/ongoing_text_view"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data_card"
+                android:layout_below="@+id/ongoing_text_view"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="2dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@color/quantum_grey300">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BOOKING ID "
+                    android:id="@+id/display_booking_id"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/display_booking_id"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="AB6GDR"
+                        android:id="@+id/booking_id"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_marginLeft="50dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LOCATION"
+                        android:id="@+id/display_location"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sumanth"
+                        android:id="@+id/location"
+                        android:layout_below="@+id/display_location"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="40dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/booking_id"
+                        android:text="DATE"
+                        android:id="@+id/display_date"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="55dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="TIME"
+                        android:id="@+id/display_time"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/location"
+                        android:layout_marginRight="50dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/display_date"
+                        android:layout_marginTop="5dp"
+                        android:text="10/10/1998"
+                        android:id="@+id/date"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:gravity="center"
+                        android:layout_marginStart="35dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/display_time"
+                        android:id="@+id/time"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="35dp"
+                        android:text="11:55 PM"/>
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/data_card"
+        android:layout_margin="15dp"
+        android:id="@+id/elapsed_card_view"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/quantum_grey300">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="TIME ELAPSED"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/display_elapsed"/>
+            <Chronometer
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HH:MM"
+                android:textSize="50dp"
+                android:layout_below="@+id/display_elapsed"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/elapsed_time"
+                android:layout_marginBottom="10dp"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+        
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/elapsed_card_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="END BOOKING"/>
+</RelativeLayout>

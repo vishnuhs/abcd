@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.parkinncharge.parkinncharge.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/public_place_parking"
+        android:name="com.parkinncharge.parkinncharge.ui.pub_park.public_parking"
+        android:label="@string/public_place_parking"
+        tools:layout="@layout/public_parking" />
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.parkinncharge.parkinncharge.ui.profile.profile"
+        android:label="Profile"
+        tools:layout="@layout/profile_fragment" />
+
+    <fragment
+        android:id="@+id/current_booking"
+        android:name="com.parkinncharge.parkinncharge.ui.booking.current_booking"
+        android:label="Current Booking"
+        tools:layout="@layout/current_booking" />
+
+    <fragment
+        android:id="@+id/payment"
+        android:name="com.parkinncharge.parkinncharge.ui.payment.payments"
+        android:label="@string/payment"
+        tools:layout="@layout/payments" />
+
+    <fragment
+        android:id="@+id/history"
+        android:name="com.parkinncharge.parkinncharge.ui.history.history"
+        android:label="@string/history"
+        tools:layout="@layout/history" />
+
+    <fragment
+        android:id="@+id/refer_and_earn"
+        android:name="com.parkinncharge.parkinncharge.ui.share.ShareFragment"
+        android:label="@string/refer_and_earn"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/logout"
+        android:name="com.parkinncharge.parkinncharge.ui.logout.logout"
+        android:label="logout"
+        tools:layout="@layout/logout_activity" />
+
+
+    <fragment
+        android:id="@+id/ongoing_booking"
+        android:name="com.parkinncharge.parkinncharge.ongoing_booking"
+        android:label="Ongoing Booking"
+        tools:layout="@layout/fragment_ongoing_booking" />
+    <fragment
+        android:id="@+id/scan_in"
+        android:name="com.parkinncharge.parkinncharge.scan_in"
+        android:label="Scan QR"
+        tools:layout="@layout/frag_scan_in" >
+        <argument
+            android:name="booking_id"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="marker_name"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+    <fragment
+        android:id="@+id/switch_owner"
+        android:name="com.parkinncharge.parkinncharge.ui.switch_owner.switch_owner"
+        android:label="Switch To Owner"
+        tools:layout="@layout/fragment_switch_owner" />
+    <fragment
+        android:id="@+id/switch_owner_after_request"
+        android:name="com.parkinncharge.parkinncharge.ui.switch_owner.switch_owner_after_request"
+        android:label="Switch To Owner"
+        tools:layout="@layout/fragment_switch_owner_after_request" />
+    <fragment
+        android:id="@+id/payment_success"
+        android:name="com.parkinncharge.parkinncharge.payment_success"
+        android:label="Payment Success"
+        tools:layout="@layout/fragment_payment_success" />
+
+</navigation>

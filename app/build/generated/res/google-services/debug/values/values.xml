@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">826524099366-9cvv85ojc0idsdi3j4n2vp9kkpo160fv.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://parkin-n-charge.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">826524099366</string>
+    <string name="google_api_key" translatable="false">AIzaSyDqPrHqXUh3XlQ44sAiALxH7aMuPMA_gLM</string>
+    <string name="google_app_id" translatable="false">1:826524099366:android:215cf2ae30f6e5be3517e7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDqPrHqXUh3XlQ44sAiALxH7aMuPMA_gLM</string>
+    <string name="google_storage_bucket" translatable="false">parkin-n-charge.appspot.com</string>
+    <string name="project_id" translatable="false">parkin-n-charge</string>
+</resources>

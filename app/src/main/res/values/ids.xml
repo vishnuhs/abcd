@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="logout_activity" type="id" />
+    <item name="profile" type="id" />
+    <item name="scan_in" type="id" />
+    <item name="ongoing_booking" type="id" />
+    <item name="switch_owner_after_request" type="id" />
+    <item name="pro" type="id" />
+    <item name="fragment_frame" type="id" />
+</resources>
